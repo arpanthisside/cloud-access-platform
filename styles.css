@@ -24,7 +24,7 @@
 .landing-content h1 {
     font-size:5.2em;
     margin-left: 0.6em;
-    color: #5d5d5d;
+    color: #a9a3a3;
 }
 
 .landing-image .oval-image {
@@ -33,6 +33,17 @@
     height: 300px; /* Fixed height to maintain the circular shape */
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
+
+.landing-content p {
+  margin-left: 2em;
+  color:rgb(115, 112, 112);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  font-weight: 450;
+}
+
+
+
 
 
 
