@@ -513,3 +513,19 @@ nav {
     font-weight: 500;
     font-family: Rethink Sans;
 }
+
+/* Accordion Button */
+
+.accordion-body .btn {
+  background-color: orange;
+  border-color: orange;
+  font-size: 18px; 
+  padding: 10px 20px; 
+  width: 6em;
+  border-radius: 2em;
+}
+
+.accordion-body .btn:hover {
+  background-color: rgb(223, 125, 7); /* Optional: change color on hover */
+  border-color: rgb(222, 124, 3);
+}
