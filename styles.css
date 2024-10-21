@@ -133,27 +133,29 @@ nav {
 
 .card {
     position: relative;
-    overflow: hidden;
     background-color: #000000;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-    width: 75%; /* Fixed card width */
+    width: 75%;
     margin: auto;
-    height: 20em; /* Fixed card height */
+    height: 20em;
+    display: flex;
+    flex-direction: column; /* Ensures the image and content stack vertically */
 }
 
 .card-image {
-    width: 100%;
-    height: 70%; /* Adjusted height for the image container */
-    overflow: hidden; /* Ensures no overflow from large images */
+    height: 70%; /* Fixed height for the image container */
+    overflow: hidden;
+    border-top-left-radius: 20px;  /* Ensures the corners remain rounded */
+    border-top-right-radius: 20px;
 }
 
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    object-fit: cover;
     transition: opacity 0.3s ease-in-out;
     opacity: 0.8;
 }
@@ -167,11 +169,13 @@ nav {
 }
 
 .card-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 30%; /* Fixed height for the content section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     color: rgba(255, 255, 255, 0.9); /* Transparent white text */
@@ -191,13 +195,14 @@ nav {
 }
 
 .card-content h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .card-content p {
-    font-size: 16px;
+    font-size: 14px;
 }
+
 
 * {
     margin: 0;
@@ -548,4 +553,15 @@ nav {
 
 #carouselExampleCaptions {
     margin-bottom: 5em;
+}
+
+ #sph{
+    margin-left:3.2em;
+    color: #b3a8a8;
+}
+
+.service-prov p {
+    color: #b3a8a8;
+    margin-left:4.2em;
+    margin-top: 2em;
 }
