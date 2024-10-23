@@ -15,7 +15,8 @@
     justify-content: space-between;
     align-items: center;
     font-family: Bebas Neue;
-    
+    margin-top: 1.7em;
+    margin-bottom: 3.8em;
     padding: 50px;
     background-color: #000000;
     padding-top: 100px;
@@ -71,6 +72,7 @@
   font-size: 20px;
   margin-bottom: 10px;
   color: #f1f1f1;
+  margin-top: 2em;
 }
 
 .cloud-edu .btn {
@@ -80,6 +82,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
+  margin-top: 0.3em;
 }
 
 .cloud-edu .btn:hover {
@@ -573,4 +576,19 @@ nav {
 .accordion-body .btn:hover {
   background-color: rgb(130, 108, 80); /* Optional: change color on hover */
   border-color: rgb(162, 122, 74);
+}
+
+
+
+/* Initially hide the element */
+.cloud-edu {
+  opacity: 0;
+  transform: translateY(100px); /* Slight movement for additional effect */
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+/* When the element is in the viewport, apply the fade-in effect */
+.cloud-edu.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
