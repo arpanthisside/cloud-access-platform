@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Rozha+One&display=swap');
 
 * {
     margin: 0;
@@ -28,10 +28,9 @@
 }
 
 .landing-image .oval-image {
-    border-radius: 50%; /* Makes the image circular */
-    width: 300px; /* Fixed width */
-    height: 300px; /* Fixed height to maintain the circular shape */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
+   width:40em;
+   
+   
 }
 
 .landing-content p {
@@ -40,6 +39,52 @@
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
   font-weight: 450;
+}
+
+
+
+/* Cloud Education  */
+
+.cloud-edu {
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.cloud-edu h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.cloud-edu .resource {
+  margin-bottom: 15px;
+}
+
+.cloud-edu h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.cloud-edu .btn {
+  text-decoration: none;
+  color: white;
+  background-color: #656565;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cloud-edu .btn:hover {
+  background-color: #5b7189;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -453,7 +498,7 @@ nav {
   .accordion{
     margin: 5em;
     
-    font-family: Rethink Sans;
+    font-family:Rozha One;
     background-color: #000000;
   }
 
@@ -517,15 +562,15 @@ nav {
 /* Accordion Button */
 
 .accordion-body .btn {
-  background-color: orange;
-  border-color: orange;
+  background-color: rgb(81, 78, 73);
+  border-color: rgb(122, 118, 112);
   font-size: 18px; 
   padding: 10px 20px; 
-  width: 6em;
+  width: 9em;
   border-radius: 2em;
 }
 
 .accordion-body .btn:hover {
-  background-color: rgb(223, 125, 7); /* Optional: change color on hover */
-  border-color: rgb(222, 124, 3);
+  background-color: rgb(130, 108, 80); /* Optional: change color on hover */
+  border-color: rgb(162, 122, 74);
 }
